@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <!-- ENCABEZADO -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="encabezado">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="Images/LogoSinFondo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Portal de turnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Sedes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="boton-home-is" href="#" role="button">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="boton-home-r" href="#" role="button">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- IMAGEN PRINCIPAL -->
+    <div class="hero">
+      <div>
+        <h1>Todos tus estudios<br>y médicos en un<br>solo lugar.</h1>
+      </div>
+      <div>
+        <ul>
+          <li>Solicitá turnos, estudios y recetas para vos y tus familiares</li>
+          <li>Visualizá y descargá tus informes, imágenes médicas y estudios de laboratorio</li>
+          <li>Desde 1964, a la vanguardia de la medicina moderna.</li>
+        </ul>
+      </div>
+      <div>
+        <a class="btn btn-primary boton-turno" id="boton-home-is" href="#" role="button">Portal de turnos</a>
+      </div>
+    </div>
+    <!-- SECTION1 CON CARRUSEL -->
+    <section class="section-uno">
+      <div class="carrusel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="Images/fachada1.jpg" class="d-block w-100" alt="...">
+              <div class="location-overlay">
+                <a class="maps"
+                  href="https://www.google.com.ar/maps/place/DIM+Rivadavia/@-34.641344,-58.5680862,21z/data=!4m6!3m5!1s0x95bcc7efd0cf4f75:0x64269dc89a4ab14f!8m2!3d-34.6414141!4d-58.5680862!16s%2Fg%2F11b6zw5285?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </a>
+                <h6>Ramos Mejía</h6>
+                <p>Av de Mayo 1200</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Images/fachada2.jpg" class="d-block w-100" alt="...">
+              <div class="location-overlay">
+                <a class="maps"
+                  href="https://www.google.com.ar/maps/place/CEPEM+Consultorios+M%C3%A9dicos/@-34.6463126,-58.6215023,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc761c3a45251:0x358c349d88ed7482!8m2!3d-34.6463126!4d-58.6189274!16s%2Fg%2F11b73vg598?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </a>
+                <h6>Morón</h6>
+                <p>Gral. Machado 729</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Images/fachada3.jpg" class="d-block w-100" alt="...">
+              <div class="location-overlay">
+                <a class="maps"
+                  href="https://www.google.com.ar/maps/place/Casa+Hospital+San+Juan+de+Dios+-+Sede+Castelar/@-34.6442454,-58.6591373,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcbf59c49807a5:0x679cf4e2385867ba!8m2!3d-34.6442454!4d-58.6565624!16s%2Fg%2F11j259hds2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </a>
+                <h6>Castelar</h6>
+                <p>Av. Sta Rosa 1355</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nuestros-centros">
+        <h2>NUESTROS CENTROS DE ATENCIÓN.</h2>
+        <h4>Conocé nuestros centros y elegí el que más cómodo te quede. <br> En cada sede encontrarás tecnología
+          avanzada y profesionales comprometidos con tu bienestar.</h4>
+      </div>
+    </section>
+    <section>
+      <article class="titulo">
+        <h2>¿POR QUÉ ELEGIR LOS CENTROS FIGMA?</h2>
+      </article>
+      <article class="cards">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Images/doctor-talking-patient-s-wife.jpg" alt="Avatar">
+              <h5>Atención personalizada</h5>
+            </div>
+            <div class="flip-card-back">
+              <h6>Atención personalizada</h6>
+              <p>En FIGMA queremos acompañarte a vos y tus seres queridos toda la vida. De la misma manera que lo
+                hacemos con nuestras familias, porque para ellos, buscamos lo mejor: atención personalizada y esa mirada
+                cálida junto a un gesto amable en un momento delicado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Images/doctor-tracking-data-transmitted-by-brainwaves-scanning-headset-medical-divice.jpg"
+                alt="Avatar">
+              <h5>Tecnología</h5>
+            </div>
+            <div class="flip-card-back">
+              <h6>Tecnología</h6>
+              <p>Con tecnología de avanzada a nivel mundial para llegar a diagnósticos más precisos en menor tiempo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Images/scientist-with-chemical-substance-close-up.jpg" alt="Avatar">
+              <h5>Calidad</h5>
+            </div>
+            <div class="flip-card-back">
+              <h6>Calidad</h6>
+              <p>Nos manejamos con los más altos estándares de calidad, brindando resultados exactos y seguros.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Images/hands-with-mobile.jpg" alt="Avatar">
+              <h5>Digital</h5>
+            </div>
+            <div class="flip-card-back">
+              <h6>Digital</h6>
+              <p>Con nuestro Portal Web y App móvil podés hacer video consultas, solicitar turnos, estudios médicos y
+                mucho más!</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Images/woman-working-laborator.jpg" alt="Avatar">
+              <h5>Laboratorios</h5>
+            </div>
+            <div class="flip-card-back">
+              <h6>Laboratorios</h6>
+              <p>Nuestros laboratorios de análisis clínicos se encuentran totalmente equipados por Roche.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Images/equipo.jpg" alt="Avatar">
+              <h5>Profesionales</h5>
+            </div>
+            <div class="flip-card-back">
+              <h6>Profesionales</h6>
+              <p>Contamos con más de 750+ profesionales en más 350+ especialidades para ayudarte a vos.</p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </section>
+
+    <!-- SECTION2 CON CARRUSEL -->
+    <section class="section-uno">
+      <div class="carrusel">
+        <div id="carouselExampleLight" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="Images/3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Images/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/app de pc.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLight"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLight"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nuestros-centros">
+        <h2>NUEVA APP PARA SACAR TURNO</h2>
+        <h4>Desde la nueva App podés solicitar turnos para vos y tu familia de manera rápida y fácil. Además, podés
+          visualizar, descargar o enviar tus informes médicos o estudios de laboratorioa quien vos quieras. Próximamente
+          podrás realizar la recepción desde tu celular ¡Sin hacer filas!</h4>
+        <div>
+          <a class="btn btn-primary boton-turno sist-op" id="boton-home-is" href="#" role="button">IOS</a>
+          <a class="btn btn-primary boton-turno sist-op" id="boton-home-is" href="#" role="button">ANDROID</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CARRUSEL CON NOVEDADES -->
+    <section style="margin-bottom: 3%;">
+      <div class="nuestros-centros novedades">
+        <h2>NOVEDADES</h2>
+      </div>
+      <!-- Container for the image gallery -->
+      <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext divnumero1">1 / 6</div>
+          <img src="Images/cmama.jpg" style="width:30%">
+          <a class="nuevobt location-overlay" href="#">Leer más</a>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext divnumero1">2 / 6</div>
+          <img src="Images/vacunacion.jpg" style="width:30%">
+          <a class="nuevobt location-overlay" href="#">Leer más</a>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext divnumero1">3 / 6</div>
+          <img src="Images/tallerBienEstar.jpg" style="width:30%">
+          <a class="nuevobt location-overlay" href="#">Leer más</a>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext divnumero1">4 / 6</div>
+          <img src="Images/saludBucal.jpg" style="width:30%">
+          <a class="nuevobt location-overlay" href="#">Leer más</a>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext divnumero1">5 / 6</div>
+          <img src="Images/hidratacion.jpg" style="width:30%">
+          <a class="nuevobt location-overlay" href="#">Leer más</a>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext divnumero1">6 / 6</div>
+          <img src="Images/donacion.jpg" style="width:30%">
+          <a class="nuevobt location-overlay" href="#">Leer más</a>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row rowUno">
+          <div class="column">
+            <img class="demo cursor" src="Images/cmama.jpg" style="width:100%" onclick="currentSlide(1)"
+              alt="Detectemos a Tiempo: Prevención es Vida">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/vacunacion.jpg" style="width:100%" onclick="currentSlide(2)"
+              alt="Cuidarnos es Protegernos: Jornadas de Vacunación">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/tallerBienEstar.jpg" style="width:100%" onclick="currentSlide(3)"
+              alt="Juntos es Mejor, cuidemos Nuestra Mente">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/saludBucal.jpg" style="width:100%" onclick="currentSlide(4)"
+              alt="Cuidado Dental">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/hidratacion.jpg" style="width:100%" onclick="currentSlide(5)"
+              alt="Cuidemos Nuestro Cuerpo, mantenete Hidratado">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/donacion.jpg" style="width:100%" onclick="currentSlide(6)"
+              alt="Juntos Podemos Más: Ayudanos con tu Donación">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COBERTURAS MEDICAS -->
+    <section style="margin-bottom: 3%;">
+      <div class="nuestros-centros novedades">
+        <h2>COBERTURAS MÉDICAS</h2>
+      </div>
+      <div class="carrusel coberturas">
+        <div id="carouselCoberturas" class="carousel carousel-dark slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <img src="Images/freepik-export-20241212201206zs3Y.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201614StsP.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201858E1Qm.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201206zs3Y.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201614StsP.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201858E1Qm.jpeg" class="d-block" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img src="Images/freepik-export-20241212201858E1Qm.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201206zs3Y.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201614StsP.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201858E1Qm.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201206zs3Y.jpeg" class="d-block" alt="...">
+                <img src="Images/freepik-export-20241212201614StsP.jpeg" class="d-block" alt="...">
+                <!-- SOLO PARA VER EN GIT -->
+                <img src="Images/freepik-export-20241212201614StsP.jpeg" class="d-block" alt="...">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoberturas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCoberturas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- TRABAJA CON NOSOTROS -->
+    <section class="trabaja-nosotros" style="position: relative;margin-bottom: 4%;">
+      <img src="Images/medical-people-collection-collage.jpg" alt="" style="width: 100%;opacity: 0.5;">
+      <h2>¡Se parte de nuestra familia!</h2>
+      <a class="btn btn-primary boton-turno" id="BTrabajaCN" href="#" role="button">Trabajá con nosotros</a>
+    </section>
+
+
+
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 logo">
+          <a class="logoPie" href="#">
+            <img src="Images/LogoSinFondo.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <h5>Acerca de</h5>
+          <p>Información sobre la empresa.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Servicios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contacto</h5>
+          <p>Email: ejemplo@correo.com</p>
+        </div>
+      </div>
+      <p class="mt-3">© 2024 Bazar, Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="java.js"></script>
+</body>
+
+</html>
